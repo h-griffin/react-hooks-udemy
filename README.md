@@ -32,3 +32,20 @@
 - [useState](notes/useState.md)
 
 - sending HTTP
+    - fetch default get
+    - db want post
+    - pass obj describing data
+
+- use Effect
+    - root of function component
+    - acts like `componentDidUpdate`
+    - default runs after every component render cycle
+    - set when to run ^^
+    - with `[]` as a second argument it runs once after first render like `componentDidMount`
+    - can return something, must be function
+    - if [] cleanup goes when **unmounted**
+
+- useCallBack
+    - with `[]` as a second argument
+    - caches function to survive rerender cycles
+
