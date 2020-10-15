@@ -4,12 +4,12 @@
 - [understanding closures](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures)
 
 
-- functional 
+- functional components
     - props in jsx out
     - for presentation
     - one or few purposes
 
-- class
+- class components
     - props adn state
     - buisness logic goes here
     - orchestrates componetns
@@ -29,14 +29,14 @@
     - cannot be nested, must be used at root
     - cannot be in `if` statement
 
-- [useState](notes/useState.md)
+- [useState notes](notes/useState.md)
 
 - sending HTTP
     - fetch default get
     - db want post
     - pass obj describing data
 
-- use Effect
+- `useEffect`
     - root of function component
     - acts like `componentDidUpdate`
     - default runs after every component render cycle
@@ -45,7 +45,16 @@
     - can return something, must be function
     - if [] cleanup goes when **unmounted**
 
-- useCallBack
+- `useCallBack`
     - with `[]` as a second argument
     - caches function to survive rerender cycles
+
+- react batches updates [state-batching notes](notes/state-batching.md)
+    - all state updates are synchronusly after eachother inside one funtion
+    - one render cycle to update all state updates
+
+- `useReducer`
+    - alt `useState`
+    - state updating logic inside reducer
+    - reducer : functions that take input adn return output
 
