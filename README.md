@@ -48,6 +48,7 @@
 - `useCallBack`
     - with `[]` as a second argument
     - caches function to survive rerender cycles
+    - save function that doesnt change
 
 - react batches updates [state-batching notes](notes/state-batching.md)
     - all state updates are synchronusly after eachother inside one funtion
@@ -62,3 +63,11 @@
     - see section 7 'diving deeper into components'
     - context folder with state files
     - alt to passing props around, avoiding long chains
+
+
+- `useMemo` 
+    - save value that doesnt change (like useCallback)
+    
+- custom hooks
+    -   /hooks folder
+    - share logic not data
