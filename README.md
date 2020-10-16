@@ -58,3 +58,7 @@
     - state updating logic inside reducer
     - reducer : functions that take input adn return output
 
+- `useContext`
+    - see section 7 'diving deeper into components'
+    - context folder with state files
+    - alt to passing props around, avoiding long chains
